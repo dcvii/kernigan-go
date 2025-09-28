@@ -10,13 +10,21 @@ import (
 	"os"
 )
 
-var palette = []color.Color{color.White, color.Black}
+var palette = []color.Color{color.White, color.RGBA{0, 255, 0, 255}}
 
 const whiteIndex = 0
-const blackIndex = 1
+const greenIndex = 1
 
 func main() {
-	lissajous(os.Stdout)
+	file, err := os.Create("lissajous.gif")
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+
+	lissajous(file)
+	println("Lissajous animation saved to lissajous.gif")
+	//
 
 }
 
@@ -38,7 +46,7 @@ func lissajous(out io.Writer) {
 		for t := 0.0; t < cycles*2*math.Pi; t += res {
 			x := math.Sin(t)
 			y := math.Sin(t*freq + phase)
-			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+05), blackIndex)
+			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+05), greenIndex)
 		}
 		phase += 0.1
 		anim.Delay = append(anim.Delay, delay)
