@@ -1,0 +1,4 @@
+Printf does not write a newline by default. By convention, formatting functions whose names end in f, such as log.Printf and fmt.Errorf, use the formatting rules of fmt.Printf, whereas those whose names end in ln follow Println, formatting their arguments as if by %v, followed by a newline. Many programs read either from their standard input, as above, or from a sequence of named files. The next version of dup can read from the standard input or handle a list of file names, using os.Open to open each one:
+
+Donovan, Alan A. A.; Kernighan, Brian W.. Go Programming Language, The (Addison-Wesley Professional Computing Series) (Function). Kindle Edition.
+mdcb

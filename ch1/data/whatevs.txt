@@ -1,0 +1,4 @@
+not write a newline by default. By convention, formatting functions whose names end in f, such as log.Printf and fmt.Errorf, use the formatting rules of fmt.Printf, whereas
+
+Donovan, Alan A. A.; Kernighan, Brian W.. Go Programming Language, The (Addison-Wesley Professional Computing Series) (Function). Kindle Edition.
+mdcb
