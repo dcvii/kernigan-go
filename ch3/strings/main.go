@@ -55,8 +55,15 @@ func main() {
 	fmt.Println(s1)
 	fmt.Println(utf8.RuneCountInString(s1))
 
-	// katakana
+	// katakana runes
 	// あいうえお
 	s2 := "あいうえお"
 	fmt.Printf("%s\n", s2)
+	r := []rune(s2)
+	fmt.Println(r)
+
+	// direct print from codes
+	fmt.Println(string(65))
+	fmt.Println(string(0xfeac))
+
 }
