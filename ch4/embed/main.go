@@ -18,6 +18,7 @@ type Wheel struct {
 	Spokes int
 }
 
+// Stringify Wheel
 func (w Wheel) String() string {
 	return fmt.Sprintf("Wheel{Circle:Center{X:%v, Y:%v}, Radius:%v}, Spokes:%v}", w.Circle.Center.X, w.Circle.Center.Y, w.Circle.Radius, w.Spokes)
 }
