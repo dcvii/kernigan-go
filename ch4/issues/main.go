@@ -1,14 +1,14 @@
 package main
 
 import (
-	"conv-utils/kernigan-go/ch4/github"
 	"fmt"
 	"log"
 	"os"
+	"kernigan-go/ch4/github"
 )
 
 func main() {
-	fmt.Println("Hello, World!")
+	fmt.Println("Hello, fuckers!")
 	result, err := github.SearchIssues(os.Args[1:])
 	if err != nil {
 		log.Fatal(err)

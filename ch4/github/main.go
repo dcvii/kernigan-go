@@ -1,4 +1,4 @@
-package main
+package github
 
 import (
 	"encoding/json"
@@ -51,10 +51,4 @@ func SearchIssues(terms []string) (*IssueSearchResult, error) {
 	}
 	resp.Body.Close()
 	return &result, nil
-}
-
-func main() {
-	// For now, a simple main function. Will be extended later.
-	// For example, you might want to call SearchIssues here.
-	// For example: SearchIssues([]string{"repo:golang/go", "is:open", "json decoder"})
 }
