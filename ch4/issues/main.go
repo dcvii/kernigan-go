@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"kernigan-go/ch4/github"
 	"log"
 	"os"
-	"kernigan-go/ch4/github"
 )
 
 func main() {
