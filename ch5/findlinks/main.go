@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"kernigan-go/ch5/html"
 	"os"
-	"github.com/mdcb/kernigan-go/ch5/html"
 )
 
 func visit(links []string, n *html.Node) []string {
@@ -19,7 +19,6 @@ func visit(links []string, n *html.Node) []string {
 	}
 	return links
 }
-
 
 func main() {
 	doc, err := html.Parse(os.Stdin)
